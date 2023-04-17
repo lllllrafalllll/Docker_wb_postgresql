@@ -1,0 +1,6 @@
+#run python script every day at 00:00
+3 6 * * * /usr/local/bin/python /Timelaps/wb_ID33732.py -i /motioneye/Camera3/ -f 120 > /proc/1/fd/1 2>/proc/1/fd/2
+09 10 * * 2 /usr/local/bin/python /Timelaps/wb_ID33732_week.py -i /motioneye/Camera3/ -f 120 > /proc/1/fd/1 2>/proc/1/fd/2
+3 7 * * * /usr/local/bin/python /Timelaps/wb_1166200.py -i /motioneye/Camera3/ -f 120 > /proc/1/fd/1 2>/proc/1/fd/2
+09 11 * * 2 /usr/local/bin/python /Timelaps/wb_1166200_week.py -i /motioneye/Camera3/ -f 120 > /proc/1/fd/1 2>/proc/1/fd/2
+#end of line
